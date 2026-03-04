@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Creative Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Portfolio</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#internships" class="nav-link">Internships</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link admin-link" id="adminLink">Admin</a></li>
+                <li><button id="themeToggle" class="theme-toggle" title="Toggle Dark/Light Mode"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" id="heroTitle">Creative Developer</h1>
+                <p class="hero-subtitle" id="heroSubtitle">Building digital experiences that matter</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+
+                <div class="profile-card">
+                    <div class="profile-avatar" id="profileAvatar">
+                        <img id="profileImagePreview" alt="Profile" />
+                    </div>
+                    <ul class="profile-links">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="#" id="profileEmail" target="_blank" rel="noopener">Gmail</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                            <a href="#" id="profileLinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="#" id="profilePhone">Mobile</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i>
+                            <a href="#" id="profileGithub" target="_blank" rel="noopener">GitHub</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-hackerrank"></i>
+                            <a href="#" id="profileHackerrank" target="_blank" rel="noopener">HackerRank</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p id="aboutText">I'm a passionate developer with a love for creating beautiful, functional, and user-centered digital experiences. With a strong foundation in modern web technologies, I bring ideas to life through clean code and thoughtful design.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3 id="projectsCompleted">50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-avatar">
+                        <img id="aboutImage" alt="About Image" style="display:none;" />
+                        <i class="fas fa-code" id="aboutIcon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid" id="educationGrid">
+                <!-- Education items will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internships" class="internships">
+        <div class="container">
+            <h2 class="section-title">Internships</h2>
+            <div class="internships-grid" id="internshipsGrid">
+                <!-- Internships will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid" id="certificationsGrid">
+            </div>
+        </div>
+    </section>
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Awards</h2>
+            <div class="achievements-grid" id="achievementsGrid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid" id="skillsGrid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid" id="projectsGrid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p id="contactEmail">nikki27.ai@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p id="contactPhone">+91 9704948846</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p id="contactLocation">San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/nikhithakistapati@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+                    <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/Nikki1527" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nikhithareddy27" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Admin Modal -->
+    <div id="adminModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Admin Panel</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="admin-tabs">
+                    <button class="tab-btn active" data-tab="hero">Hero</button>
+                    <button class="tab-btn" data-tab="about">About</button>
+                    <button class="tab-btn" data-tab="education">Education</button>
+                    <button class="tab-btn" data-tab="internships">Internships</button>
+                    <button class="tab-btn" data-tab="certifications">Certifications</button>
+                    <button class="tab-btn" data-tab="achievements">Achievements</button>
+                    <button class="tab-btn" data-tab="skills">Skills</button>
+                    <button class="tab-btn" data-tab="projects">Projects</button>
+                    <button class="tab-btn" data-tab="contact">Contact</button>
+                </div>
+                
+                <!-- Hero Tab -->
+                <div class="tab-content active" id="hero-tab">
+                    <h3>Hero Section</h3>
+                    <div class="form-group">
+                        <label>Title:</label>
+                        <input type="text" id="adminHeroTitle" placeholder="Hero Title">
+                    </div>
+                    <div class="form-group">
+                        <label>Subtitle:</label>
+                        <input type="text" id="adminHeroSubtitle" placeholder="Hero Subtitle">
+                    </div>
+                    <hr style="margin: 1rem 0; border: none; border-top: 1px solid #e5e7eb;">
+                    <h3>Profile</h3>
+                    <div class="form-group">
+                        <label>Profile Image:</label>
+                        <input type="file" id="adminProfileImage" accept="image/*">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Gmail (email address):</label>
+                        <input type="email" id="adminProfileEmail" placeholder="you@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label>LinkedIn URL:</label>
+                        <input type="url" id="adminProfileLinkedIn" placeholder="https://linkedin.com/in/username">
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile Number:</label>
+                        <input type="text" id="adminProfilePhone" placeholder="+1 (555) 123-4567">
+                    </div>
+                    <div class="form-group">
+                        <label>GitHub URL:</label>
+                        <input type="url" id="adminProfileGithub" placeholder="https://github.com/username">
+                    </div>
+                    <div class="form-group">
+                        <label>HackerRank URL:</label>
+                        <input type="url" id="adminProfileHackerrank" placeholder="https://www.hackerrank.com/username">
+                    </div>
+                    <button class="btn btn-primary" onclick="updateHero()">Update Hero</button>
+                </div>
+
+                <!-- About Tab -->
+                <div class="tab-content" id="about-tab">
+                    <h3>About Section</h3>
+                    <div class="form-group">
+                        <label>About Text:</label>
+                        <textarea id="adminAboutText" rows="4" placeholder="About text"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>About Image:</label>
+                        <input type="file" id="adminAboutImage" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label>Years of Experience:</label>
+                        <input type="number" id="adminExperienceYears" placeholder="3">
+                    </div>
+                    <div class="form-group">
+                        <label>Projects Completed:</label>
+                        <input type="number" id="adminProjectsCompleted" placeholder="50">
+                    </div>
+                    <div class="form-group">
+                        <label>Happy Clients:</label>
+                        <input type="number" id="adminHappyClients" placeholder="30">
+                    </div>
+                    <button class="btn btn-primary" onclick="updateAbout()">Update About</button>
+                </div>
+
+                <!-- Skills Tab -->
+                <div class="tab-content" id="skills-tab">
+                    <h3>Skills Management</h3>
+                    <div class="skills-admin">
+                        <div class="form-group">
+                            <label>Skill Name:</label>
+                            <input type="text" id="skillName" placeholder="e.g., JavaScript">
+                        </div>
+                        <div class="form-group">
+                            <label>Skill Level (1-100):</label>
+                            <input type="number" id="skillLevel" min="1" max="100" placeholder="85">
+                        </div>
+                        <div class="form-group">
+                            <label>Skill Icon (FontAwesome class):</label>
+                            <input type="text" id="skillIcon" placeholder="fab fa-js">
+                        </div>
+                        <button class="btn btn-primary" onclick="addSkill()">Add Skill</button>
+                    </div>
+                    <div class="skills-list" id="adminSkillsList">
+                        <!-- Skills will be listed here -->
+                    </div>
+                </div>
+
+                <!-- Projects Tab -->
+                <div class="tab-content" id="projects-tab">
+                    <h3>Projects Management</h3>
+                    <div class="projects-admin">
+                        <div class="form-group">
+                            <label>Project Title:</label>
+                            <input type="text" id="projectTitle" placeholder="Project Title">
+                        </div>
+                        <div class="form-group">
+                            <label>Project Description:</label>
+                            <textarea id="projectDescription" rows="3" placeholder="Project description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Technologies:</label>
+                            <input type="text" id="projectTechnologies" placeholder="HTML, CSS, JavaScript">
+                        </div>
+                        <div class="form-group">
+                            <label>Project URL:</label>
+                            <input type="url" id="projectUrl" placeholder="https://project.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Project Icon (FontAwesome class):</label>
+                            <input type="text" id="projectIcon" placeholder="fas fa-code">
+                        </div>
+                        <div class="form-group">
+                            <label>Project Image:</label>
+                            <input type="file" id="projectImage" accept="image/*">
+                        </div>
+                        <div class="form-group">
+                            <label>GitHub URL:</label>
+                            <input type="url" id="projectGithub" placeholder="https://github.com/username/project">
+                        </div>
+                        <div class="form-group">
+                            <label>App Live Link:</label>
+                            <input type="url" id="projectAppLink" placeholder="https://project-demo.com">
+                        </div>
+                        <button class="btn btn-primary" onclick="addProject()">Add Project</button>
+                    </div>
+                    <div class="projects-list" id="adminProjectsList">
+                        <!-- Projects will be listed here -->
+                    </div>
+                </div>
+
+                <!-- Education Tab -->
+                <div class="tab-content" id="education-tab">
+                    <h3>Education Management</h3>
+                    <div class="education-admin">
+                        <div class="form-group">
+                            <label>Degree/Course:</label>
+                            <input type="text" id="educationDegree" placeholder="e.g., Bachelor of Computer Science">
+                        </div>
+                        <div class="form-group">
+                            <label>Institution:</label>
+                            <input type="text" id="educationInstitution" placeholder="e.g., University Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Year:</label>
+                            <input type="text" id="educationYear" placeholder="e.g., 2020-2024">
+                        </div>
+                        <div class="form-group">
+                            <label>Description:</label>
+                            <textarea id="educationDescription" rows="3" placeholder="Brief description of your studies"></textarea>
+                        </div>
+                        <button class="btn btn-primary" onclick="addEducation()">Add Education</button>
+                    </div>
+                    <div class="education-list" id="adminEducationList">
+                        <!-- Education items will be listed here -->
+                    </div>
+                </div>
+
+                <!-- Internships Tab -->
+                <div class="tab-content" id="internships-tab">
+                    <h3>Internships Management</h3>
+                    <div class="internships-admin">
+                        <div class="form-group">
+                            <label>Position/Role:</label>
+                            <input type="text" id="internshipPosition" placeholder="e.g., Software Development Intern">
+                        </div>
+                        <div class="form-group">
+                            <label>Company:</label>
+                            <input type="text" id="internshipCompany" placeholder="e.g., Google">
+                        </div>
+                        <div class="form-group">
+                            <label>Duration:</label>
+                            <input type="text" id="internshipDuration" placeholder="e.g., June 2023 - August 2023">
+                        </div>
+                        <div class="form-group">
+                            <label>Location:</label>
+                            <input type="text" id="internshipLocation" placeholder="e.g., Mountain View, CA">
+                        </div>
+                        <div class="form-group">
+                            <label>Description:</label>
+                            <textarea id="internshipDescription" rows="3" placeholder="Brief description of your role and responsibilities"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Technologies Used:</label>
+                            <input type="text" id="internshipTechnologies" placeholder="e.g., React, Node.js, MongoDB">
+                        </div>
+                        <div class="form-group">
+                            <label>Company Logo (optional):</label>
+                            <input type="file" id="internshipLogo" accept="image/*">
+                        </div>
+                        <button class="btn btn-primary" onclick="addInternship()">Add Internship</button>
+                    </div>
+                    <div class="internships-list" id="adminInternshipsList">
+                        <!-- Internships will be listed here -->
+                    </div>
+                </div>
+
+                <!-- Certifications Tab -->
+                <div class="tab-content" id="certifications-tab">
+                    <h3>Certifications Management</h3>
+                    <div class="certifications-admin">
+                        <div class="form-group">
+                            <label>Certification Name:</label>
+                            <input type="text" id="certificationName" placeholder="e.g., AWS Certified Developer">
+                        </div>
+                        <div class="form-group">
+                            <label>Certification PDF (Optional):</label>
+                            <input type="file" id="certificationPdf" accept="application/pdf">
+                        </div>
+                        <div class="form-group">
+                            <label>Issuing Organization:</label>
+                            <input type="text" id="certificationIssuer" placeholder="e.g., Amazon Web Services">
+                        </div>
+                        <div class="form-group">
+                            <label>Issue Date:</label>
+                            <input type="date" id="certificationDate">
+                        </div>
+                        <div class="form-group">
+                            <label>Expiry Date (Optional):</label>
+                            <input type="date" id="certificationExpiry">
+                        </div>
+                        <div class="form-group">
+                            <label>Credential ID (Optional):</label>
+                            <input type="text" id="certificationCredentialId" placeholder="e.g., AWS-123456">
+                        </div>
+                        <div class="form-group">
+                            <label>Verification URL (Optional):</label>
+                            <input type="url" id="certificationUrl" placeholder="https://verify.certification.com">
+                        </div>
+                        <button class="btn btn-primary" onclick="addCertification()">Add Certification</button>
+                    </div>
+                    <div class="certifications-list" id="adminCertificationsList">
+                        <!-- Certifications will be listed here -->
+                    </div>
+                </div>
+
+                <!-- Achievements Tab -->
+                <div class="tab-content" id="achievements-tab">
+                    <h3>Achievements Management</h3>
+                    <div class="achievements-admin">
+                        <div class="form-group">
+                            <label>Achievement Title:</label>
+                            <input type="text" id="achievementTitle" placeholder="e.g., Best Developer Award">
+                        </div>
+                        <div class="form-group">
+                            <label>Organization:</label>
+                            <input type="text" id="achievementOrganization" placeholder="e.g., Tech Conference 2024">
+                        </div>
+                        <div class="form-group">
+                            <label>Year:</label>
+                            <input type="text" id="achievementYear" placeholder="e.g., 2024">
+                        </div>
+                        <div class="form-group">
+                            <label>Description:</label>
+                            <textarea id="achievementDescription" rows="3" placeholder="Brief description of the achievement"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Icon (FontAwesome class):</label>
+                            <input type="text" id="achievementIcon" placeholder="fas fa-trophy">
+                        </div>
+                        <div class="form-buttons">
+                            <button class="btn btn-primary" onclick="addAchievement()">Add Achievement</button>
+                            <button class="btn btn-secondary" onclick="cancelEdit()" style="display: none;">Cancel Edit</button>
+                        </div>
+                    </div>
+                    <div class="achievements-list" id="adminAchievementsList">
+                        <!-- Achievements will be listed here -->
+                    </div>
+                </div>
+
+                <!-- Contact Tab -->
+                <div class="tab-content" id="contact-tab">
+                    <h3>Contact Information</h3>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" id="adminContactEmail" placeholder="hello@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone:</label>
+                        <input type="text" id="adminContactPhone" placeholder="+1 (555) 123-4567">
+                    </div>
+                    <div class="form-group">
+                        <label>Location:</label>
+                        <input type="text" id="adminContactLocation" placeholder="San Francisco, CA">
+                    </div>
+                    <button class="btn btn-primary" onclick="updateContact()">Update Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
