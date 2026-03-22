@@ -118,12 +118,12 @@ function loadData() {
             profilePhone: '+91 9704948846',
             profileGithub: 'https://github.com/Nikki1527',
             profileHackerrank: 'https://www.hackerrank.com/profile/nikki27_ai',
-            profileImage: 'pic.jpg' 
+            profileImage: 'passportsize.jpeg' 
         },
         aboutData: {
             text: "I am an AIML student and QA automation enthusiast with hands-on experience in Playwright automation testing. I enjoy building automated test frameworks for web applications using JavaScript and TypeScript. My experience includes implementing Page Object Model, XPath, and CSS selectors to create reliable and maintainable test scripts. I am passionate about improving software quality and continuously learning new technologies in automation testing and software development.",
             projectsCompleted: '4+',
-            aboutImage: 'pic.jpg' 
+            aboutImage: 'passportsize.jpeg' 
         },
         educationData: [
             { degree: 'Bachelor Of Technology', institution: 'Mohan Babu University', year: '2022 - 2026', description: 'Pursuing 4th year in the Specialization of Artificial Intellegice and Machine Learning' },
