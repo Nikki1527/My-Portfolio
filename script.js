@@ -208,7 +208,7 @@ function loadData() {
                 url: 'https://github.com/Nikki1527',
                 icon: 'fas fa-code',
                 github: 'https://github.com/Nikki1527',
-                appLink: 'https://nikki1527.github.io/My-Portfolio/'
+                appLink: 'https://nikki1527.github.io/My-Portfolio/?v=20260322'
             },
             {
                 title: 'VegCart',
