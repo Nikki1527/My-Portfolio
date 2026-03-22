@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Convert Portfolio submodule to folder",
+			"type": "shell",
+			"command": "git rm --cached Portfolio && rmdir /s /q Portfolio\\.git && git add Portfolio",
+			"isBackground": false
+		}
+	]
+}
