@@ -193,24 +193,6 @@ function loadData() {
         ],
         projectsData: [
             {
-                title: 'Desi Guide',
-                description: 'A 3-portal platform connecting tourists with 20+ local guides, offering affordable packages and boosting local employability. Built with ReactJS, NodeJS, ExpressJS, and SAP HANA Cloud, with added features like SOS alerts and an emergency kit for traveler safety.',
-                technologies: ['ReactJS', 'NodeJS', 'ExpressJS', 'CSS3', 'SAP HANA'],
-                url: 'https://github.com/Nikki1527/DesiGuide.git',
-                icon: 'fab fa-react',
-                github: 'https://github.com/Nikki1527/DesiGuide.git',
-                appLink: 'https://desi-guide.netlify.app/'
-            },
-            {
-                title: 'AI Health Bot + Medical NFTs on Aptos',
-                description: 'An intelligent healthcare assistant that captures user symptoms, generates medical summaries using Python and NLP, and secures them as Medical NFTs on the Aptos blockchain. Integrated encryption ensures privacy, while the Medical NFT Viewer allows authorized access to health records through a user-friendly interface.',
-                technologies: ['AI / Machine Learning', 'Python', 'Aptos', 'React'],
-                url: 'https://github.com/Nikki1527/Health_bot.git',
-                icon: 'fas fa-brain',
-                github: 'https://github.com/Nikki1527/Health_bot.git',
-                appLink: 'https://health-bot-demo.vercel.app/'
-            },
-            {
                 title: 'Orange HRM Web Testing',
                 description: 'Automated end-to-end testing suite for the OrangeHRM application covering login, employee workflows, and key UI validations using scalable test architecture.',
                 technologies: ['JavaScript', 'TypeScript', 'Playwright', 'POM'],
